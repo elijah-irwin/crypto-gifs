@@ -96,6 +96,7 @@ export const TransactionProvider = ({ children }) => {
     try {
       if (!ethereum || !wallet) return metamaskAlert();
       const { addressTo, amount, keyword, message } = formData;
+      console.log(addressTo);
       const parsedAmount = ethers.utils.parseEther(amount);
       setIsLoading(true);
 
