@@ -20,7 +20,7 @@ const getEtherContract = () => {
 };
 
 const metamaskAlert = () =>
-  alert('The Metamask extension is needed to interact with this application!');
+  alert('This app requires a MetaMask connection! 😊');
 
 /*************************************
  * - TransactionProvider.jsx -
@@ -94,7 +94,7 @@ export const TransactionProvider = ({ children }) => {
 
   const sendTransaction = async () => {
     try {
-      if (!ethereum) return metamaskAlert();
+      if (!ethereum || !wallet) return metamaskAlert();
       const { addressTo, amount, keyword, message } = formData;
       const parsedAmount = ethers.utils.parseEther(amount);
       setIsLoading(true);

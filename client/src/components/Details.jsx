@@ -1,5 +1,5 @@
 const companyCommonStyles =
-  'min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-300 text-sm text-white';
+  'min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-slate-400 text-sm text-slate-300';
 
 /*************************************
  * - Details.jsx -
