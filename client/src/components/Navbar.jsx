@@ -4,6 +4,9 @@ import { FiUser } from 'react-icons/fi';
 import { useTransactionContext } from '../context/TransactionContext';
 import { shortenAddress } from '../utils/shorten-address';
 
+/*************************************
+ * - Navbar.jsx -
+ *************************************/
 const Navbar = () => {
   const { wallet, connectWallet } = useTransactionContext();
 

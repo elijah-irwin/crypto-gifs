@@ -2,6 +2,9 @@ import { BsShieldFillCheck } from 'react-icons/bs';
 import { BiSearchAlt } from 'react-icons/bi';
 import { RiHeart2Fill } from 'react-icons/ri';
 
+/*************************************
+ * - ServiceCard Component -
+ *************************************/
 const ServiceCard = ({ color, title, icon, subtitle }) => (
   <div className='flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl'>
     <div
@@ -15,6 +18,9 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
   </div>
 );
 
+/*************************************
+ * - Services.jsx -
+ *************************************/
 const Services = () => (
   <div className='flex w-full justify-center items-center gradient-bg-services'>
     <div className='flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4'>

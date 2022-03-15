@@ -1,6 +1,9 @@
 import { shortenAddress } from '../utils/shorten-address';
 import useFetchGif from '../hooks/useFetchGif';
 
+/*************************************
+ * - TransactionCard.jsx -
+ *************************************/
 const TransactionCard = ({
   addressTo,
   addressFrom,

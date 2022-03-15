@@ -1,5 +1,6 @@
-import logo from '../../images/logo.png';
-
+/*************************************
+ * - Footer.jsx -
+ *************************************/
 const Footer = () => (
   <div className='w-full flex md:justify-center justify-between items-center flex-col p-4'>
     <div className='w-full flex sm:flex-row flex-col justify-between items-center my-4'></div>
