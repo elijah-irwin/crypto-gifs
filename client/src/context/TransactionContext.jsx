@@ -22,9 +22,9 @@ const getEtherContract = () => {
 const metamaskAlert = () =>
   alert('The Metamask extension is needed to interact with this application!');
 
-// ====================================
-// Transaction Provider
-// ====================================
+/*************************************
+ * - TransactionProvider.jsx -
+ *************************************/
 export const TransactionProvider = ({ children }) => {
   const [wallet, setWallet] = useState();
   const [isLoading, setIsLoading] = useState(false);
@@ -73,7 +73,7 @@ export const TransactionProvider = ({ children }) => {
         keyword: transaction.keyword,
         amount: parseInt(transaction.amount._hex) / 10 ** 18,
       }));
-      setTransactions(formatted);
+      setTransactions(formatted.reverse());
     } catch (err) {
       console.log(err);
     }
@@ -86,6 +86,7 @@ export const TransactionProvider = ({ children }) => {
         method: 'eth_requestAccounts',
       });
       setWallet(accounts[0]);
+      getAllTransactions();
     } catch (err) {
       console.log(err);
     }
@@ -120,8 +121,16 @@ export const TransactionProvider = ({ children }) => {
 
       console.log(`Loading: ${transaction.hash}`);
       await transaction.wait();
+
       setIsLoading(false);
       console.log(`Success: ${transaction.hash}`);
+      getAllTransactions();
+      setFormData({
+        addressTo: '',
+        amount: '',
+        keyword: '',
+        message: '',
+      });
     } catch (err) {
       console.log(err);
       setIsLoading(false);

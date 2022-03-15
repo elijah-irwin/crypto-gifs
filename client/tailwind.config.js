@@ -6,6 +6,9 @@ module.exports = {
       display: ['Open Sans', 'sans-serif'],
       body: ['Open Sans', 'sans-serif'],
     },
+    container: {
+      padding: '2rem',
+    },
     extend: {
       screens: {
         mf: '990px',
