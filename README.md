@@ -4,13 +4,14 @@ My first decentralized app built to gain some experience and a better understand
 send Ethereum to other wallet addresses over the Ropsten testnet. Every transaction is recorded on the blockchain through a Solidity smart contract I developed and deployed with Hardhat & Alchemy.
 
 ## Tools
-- React
-- Vite
-- TailwindCSS
-- Solidity
-- Hardhat
-- Alchemy
-- MetaMask
+
+| Frontend   |      Blockchain      |  Deployment |
+|----------|-------------|------|
+| React |  Ethereum | Netlify |
+| Vite |    Solidity   |    |
+| TailwindCSS | Hardhat |     |
+|  | Alchemy |     |
+|  | MetaMask |     |
 
 ## Preview & Links
 
